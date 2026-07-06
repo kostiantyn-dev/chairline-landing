@@ -82,15 +82,14 @@ select {
   width: 52px;
   height: 52px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(200, 150, 62, 0.36);
   border-radius: var(--radius);
   background:
-    radial-gradient(circle at 32% 20%, rgba(255, 255, 255, 0.4), transparent 26%),
-    radial-gradient(circle at 72% 76%, rgba(200, 150, 62, 0.28), transparent 34%),
-    linear-gradient(135deg, #49311f, #17130f 58%, #2e3429);
+    radial-gradient(circle at 34% 20%, rgba(200, 150, 62, 0.2), transparent 32%),
+    linear-gradient(145deg, #2a2118, #17130f 64%, #0f0d0b);
   box-shadow:
     inset 0 0 0 1px rgba(255, 255, 255, 0.08),
-    inset 0 -16px 28px rgba(0, 0, 0, 0.24),
+    inset 0 -14px 24px rgba(0, 0, 0, 0.22),
     0 18px 38px rgba(0, 0, 0, 0.28);
   overflow: hidden;
 }
@@ -100,11 +99,11 @@ select {
   inset: 1px;
   border-radius: 7px;
   background:
-    linear-gradient(115deg, transparent 0 34%, rgba(255, 255, 255, 0.25) 45%, transparent 56%),
+    linear-gradient(115deg, transparent 0 36%, rgba(246, 203, 117, 0.18) 47%, transparent 58%),
     linear-gradient(145deg, rgba(255, 255, 255, 0.08), transparent 55%);
   content: "";
   mix-blend-mode: screen;
-  opacity: 0.55;
+  opacity: 0.44;
   transform: translateX(-44%);
   transition: transform 420ms ease, opacity 220ms ease;
 }
@@ -127,52 +126,16 @@ select {
   transform: rotate(-2deg) scale(1.04);
 }
 
-.logo-back,
-.logo-seat {
-  stroke-linejoin: round;
-}
-
-.logo-back-line,
-.logo-seat-line,
-.logo-left-leg,
-.logo-right-leg,
-.logo-left-foot,
-.logo-right-foot,
-.logo-shadow {
+.logo-line {
   fill: none;
+  stroke: var(--brass);
   stroke-linecap: round;
   stroke-linejoin: round;
+  stroke-width: 2.5;
 }
 
-.logo-back {
-  fill: #d8a144;
-  stroke: #f4cf82;
-  stroke-width: 2.6;
-}
-
-.logo-seat {
-  fill: #b86243;
-  stroke: #f0a27a;
-  stroke-width: 2.6;
-}
-
-.logo-back-line,
-.logo-seat-line {
-  stroke: rgba(23, 19, 15, 0.58);
-  stroke-width: 2.8;
-}
-
-.logo-left-leg,
-.logo-right-leg,
-.logo-left-foot,
-.logo-right-foot {
-  stroke: #f7f0e6;
-  stroke-width: 3.1;
-}
-
-.logo-shadow {
-  stroke: rgba(0, 0, 0, 0.28);
-  stroke-width: 4.4;
+.logo-detail {
+  opacity: 0.72;
 }
 
 .brand-word {
