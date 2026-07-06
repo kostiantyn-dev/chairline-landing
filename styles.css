@@ -127,51 +127,52 @@ select {
   transform: rotate(-2deg) scale(1.04);
 }
 
-.logo-arch,
-.logo-front-leg,
-.logo-back-leg,
-.logo-foot,
-.logo-cushion,
-.logo-spark {
+.logo-back,
+.logo-seat {
+  stroke-linejoin: round;
+}
+
+.logo-back-line,
+.logo-seat-line,
+.logo-left-leg,
+.logo-right-leg,
+.logo-left-foot,
+.logo-right-foot,
+.logo-shadow {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.logo-arch {
-  stroke: rgba(247, 240, 230, 0.42);
-  stroke-width: 2;
-}
-
 .logo-back {
-  fill: #c8963e;
-  stroke: #f0c879;
-  stroke-linejoin: round;
-  stroke-width: 2.4;
+  fill: #d8a144;
+  stroke: #f4cf82;
+  stroke-width: 2.6;
 }
 
 .logo-seat {
-  fill: #b65f42;
-  stroke: #eda17b;
-  stroke-linejoin: round;
-  stroke-width: 2.4;
+  fill: #b86243;
+  stroke: #f0a27a;
+  stroke-width: 2.6;
 }
 
-.logo-front-leg,
-.logo-back-leg,
-.logo-foot {
+.logo-back-line,
+.logo-seat-line {
+  stroke: rgba(23, 19, 15, 0.58);
+  stroke-width: 2.8;
+}
+
+.logo-left-leg,
+.logo-right-leg,
+.logo-left-foot,
+.logo-right-foot {
   stroke: #f7f0e6;
   stroke-width: 3.1;
 }
 
-.logo-cushion {
-  stroke: rgba(23, 19, 15, 0.55);
-  stroke-width: 3;
-}
-
-.logo-spark {
-  stroke: var(--brass);
-  stroke-width: 2.2;
+.logo-shadow {
+  stroke: rgba(0, 0, 0, 0.28);
+  stroke-width: 4.4;
 }
 
 .brand-word {
