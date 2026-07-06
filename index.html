@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChairLine HoReCa - комерційні стільці для кав'ярень, ресторанів, барів і терас з підбором, зразками матеріалів та розрахунком партії.">
+  <title>ChairLine HoReCa - стільці, які продають атмосферу закладу</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ChairLine на початок">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 54 54" focusable="false">
+          <path d="M17 12h20c4 0 7 3 7 7v3H10v-3c0-4 3-7 7-7Z"/>
+          <path d="M13 22h28l-3 14H16l-3-14Z"/>
+          <path d="M19 36v8M35 36v8M18 44h5M31 44h5"/>
+          <path d="M18 27h18"/>
+        </svg>
+      </span>
+      <span class="brand-word">
+        <strong>ChairLine</strong>
+        <small>HoReCa seating</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-label="Відкрити меню">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-nav>
+      <a href="#catalog">Колекції</a>
+      <a href="#studio">Матеріали</a>
+      <a href="#quote">Калькулятор</a>
+      <a href="#contact">Заявка</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="assets/hero-chair-showroom.png" alt="">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Стільці для кав'ярень, ресторанів, барів і терас</p>
+          <h1>Посадіть гостей так, щоб вони захотіли залишитись ще на один десерт</h1>
+          <p class="hero-text">ChairLine підбирає комерційні стільці під концепцію закладу: зносостійкі тканини, правильна посадка, партії від 12 штук і швидкий розрахунок для відкриття.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#quote">Порахувати партію</a>
+            <a class="button button-ghost" href="#catalog">Дивитись колекції</a>
+          </div>
+        </div>
+
+        <aside class="hero-board" aria-label="Комерційна пропозиція">
+          <div class="board-top">
+            <span></span>
+            <p>Партія для запуску</p>
+          </div>
+          <strong data-hero-total>від 78 600 грн</strong>
+          <p data-hero-copy>24 посадкові місця, дерево + easy-clean тканина</p>
+          <div class="board-grid">
+            <span><b>14 днів</b> типова поставка</span>
+            <span><b>3 роки</b> гарантія каркасу</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero-strip" aria-label="Переваги">
+        <span><strong>42</strong> моделі для HoReCa</span>
+        <span><strong>18</strong> комерційних тканин</span>
+        <span><strong>12+</strong> міст доставки</span>
+        <span><strong>0 грн</strong> підбір сету</span>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Не просто меблі</p>
+          <h2>Стілець впливає на чек, фото в Instagram і швидкість посадки</h2>
+        </div>
+        <p>Для закладу важливо, щоб стілець виглядав дорого, витримував щоденний потік, легко чистився і не займав зайвого місця. Ми продаємо не одиночні моделі, а готові посадкові рішення.</p>
+      </div>
+
+      <div class="value-grid">
+        <article>
+          <span>01</span>
+          <h3>Візуальний вау-ефект</h3>
+          <p>Підбираємо форму, колір і фактуру так, щоб стільці підтримували концепцію інтер'єру і виглядали добре на фото гостей.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Комерційна витривалість</h3>
+          <p>Каркаси під потік, посилені кріплення, тканини easy-clean, терасні матеріали і стійкі покриття для щоденної експлуатації.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Партія без хаосу</h3>
+          <p>Рахуємо посадкові місця, запас, доставку, строки і фінальний кошторис, щоб відкриття не зірвалося через меблі.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="section-heading">
+        <p class="eyebrow">Колекції</p>
+        <h2>Оберіть настрій закладу, а не просто артикул</h2>
+      </div>
+
+      <div class="catalog-toolbar" data-filter-group>
+        <button class="filter-chip is-active" type="button" data-filter="all">Усі</button>
+        <button class="filter-chip" type="button" data-filter="cafe">Кав'ярня</button>
+        <button class="filter-chip" type="button" data-filter="restaurant">Ресторан</button>
+        <button class="filter-chip" type="button" data-filter="bar">Бар</button>
+        <button class="filter-chip" type="button" data-filter="terrace">Тераса</button>
+      </div>
+
+      <div class="product-grid" data-products>
+        <article class="product-card" data-category="cafe restaurant" data-name="Mira Wood" data-price="3280">
+          <div class="product-visual chair-wood" aria-hidden="true"></div>
+          <div class="product-body">
+            <p>Кав'ярні та bistro</p>
+            <h3>Mira Wood</h3>
+            <span>від 3 280 грн / шт</span>
+          </div>
+          <button type="button" data-product-pick>Додати в розрахунок</button>
+        </article>
+
+        <article class="product-card" data-category="restaurant" data-name="Velvet Arc" data-price="4190">
+          <div class="product-visual chair-velvet" aria-hidden="true"></div>
+          <div class="product-body">
+            <p>Ресторани та лаунжі</p>
+            <h3>Velvet Arc</h3>
+            <span>від 4 190 грн / шт</span>
+          </div>
+          <button type="button" data-product-pick>Додати в розрахунок</button>
+        </article>
+
+        <article class="product-card" data-category="bar restaurant" data-name="Barline 72" data-price="4860">
+          <div class="product-visual chair-bar" aria-hidden="true"></div>
+          <div class="product-body">
+            <p>Барні зони</p>
+            <h3>Barline 72</h3>
+            <span>від 4 860 грн / шт</span>
+          </div>
+          <button type="button" data-product-pick>Додати в розрахунок</button>
+        </article>
+
+        <article class="product-card" data-category="terrace cafe" data-name="Terra Stack" data-price="2550">
+          <div class="product-visual chair-terrace" aria-hidden="true"></div>
+          <div class="product-body">
+            <p>Тераси та фудкорти</p>
+            <h3>Terra Stack</h3>
+            <span>від 2 550 грн / шт</span>
+          </div>
+          <button type="button" data-product-pick>Додати в розрахунок</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section studio" id="studio">
+      <div class="studio-layout">
+        <div class="studio-copy">
+          <p class="eyebrow">Матеріальна студія</p>
+          <h2>Зберіть сет під інтер'єр за 20 секунд</h2>
+          <p>Перемикайте матеріали і дивіться, як змінюється характер стільця: затишна кав'ярня, преміальний ресторан, тераса чи барна зона.</p>
+
+          <div class="material-controls" data-materials>
+            <button class="material is-active" type="button" data-material="wood">
+              <span style="--swatch:#8a5a32"></span>
+              Walnut
+            </button>
+            <button class="material" type="button" data-material="olive">
+              <span style="--swatch:#5f6b3c"></span>
+              Olive fabric
+            </button>
+            <button class="material" type="button" data-material="clay">
+              <span style="--swatch:#b46143"></span>
+              Terracotta
+            </button>
+            <button class="material" type="button" data-material="graphite">
+              <span style="--swatch:#252831"></span>
+              Graphite
+            </button>
+          </div>
+        </div>
+
+        <div class="chair-stage" data-stage>
+          <div class="stage-chair">
+            <span class="chair-back"></span>
+            <span class="chair-seat"></span>
+            <span class="chair-leg left"></span>
+            <span class="chair-leg right"></span>
+          </div>
+          <div class="stage-info">
+            <p data-material-name>Walnut frame</p>
+            <strong data-material-price>+0 грн</strong>
+            <span data-material-desc>Теплий дерев'яний вигляд для кав'ярень і bistro.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quote" id="quote">
+      <div class="quote-panel">
+        <div class="quote-copy">
+          <p class="eyebrow">Калькулятор партії</p>
+          <h2>Порахуйте бюджет перед дзвінком менеджера</h2>
+          <p>Модель не прив'язана до реального складу, але демонструє клієнту складність закупки: кількість місць, резерв, матеріал, доставка і монтаж.</p>
+        </div>
+
+        <form class="quote-form" data-quote>
+          <div class="form-grid">
+            <label>
+              Формат закладу
+              <select name="venue">
+                <option value="cafe">Кав'ярня</option>
+                <option value="restaurant">Ресторан</option>
+                <option value="bar">Бар</option>
+                <option value="terrace">Тераса</option>
+              </select>
+            </label>
+
+            <label>
+              Модель
+              <select name="model">
+                <option value="3280">Mira Wood</option>
+                <option value="4190">Velvet Arc</option>
+                <option value="4860">Barline 72</option>
+                <option value="2550">Terra Stack</option>
+              </select>
+            </label>
+
+            <label>
+              Посадкові місця: <strong data-seats-label>24</strong>
+              <input type="range" name="seats" min="12" max="120" value="24" step="2">
+            </label>
+
+            <label>
+              Резерв стільців
+              <select name="reserve">
+                <option value="0">Без резерву</option>
+                <option value="0.08" selected>+8% для замін</option>
+                <option value="0.15">+15% для мережі</option>
+              </select>
+            </label>
+
+            <label>
+              Місто
+              <select name="city">
+                <option value="kyiv">Київ</option>
+                <option value="lviv">Львів</option>
+                <option value="odesa">Одеса</option>
+                <option value="dnipro">Дніпро</option>
+              </select>
+            </label>
+
+            <label>
+              Матеріал
+              <select name="finish">
+                <option value="0">Базовий</option>
+                <option value="420">Easy-clean тканина</option>
+                <option value="690">Вуличне покриття</option>
+                <option value="980">Преміальна оббивка</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="quote-extras">
+            <label>
+              <input type="checkbox" name="delivery" checked>
+              Доставка до закладу
+            </label>
+            <label>
+              <input type="checkbox" name="samples" checked>
+              Зразки матеріалів
+            </label>
+            <label>
+              <input type="checkbox" name="assembly">
+              Монтаж і розстановка
+            </label>
+          </div>
+
+          <div class="quote-result">
+            <div>
+              <span>Орієнтовна партія</span>
+              <strong data-total>78 600 грн</strong>
+              <p data-result-note>26 стільців, поставка 10-14 днів</p>
+            </div>
+            <a class="button button-dark" href="#contact">Отримати комерційну</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section proof">
+      <div class="section-heading split">
+        <div>
+          <p class="eyebrow">Рекламні сценарії</p>
+          <h2>Пакети, які легко продати власнику закладу</h2>
+        </div>
+        <p>Тут показано не просто каталог, а готові комплекти для бізнесу. Так відвідувач швидше уявляє покупку і переходить до заявки.</p>
+      </div>
+
+      <div class="package-grid">
+        <article>
+          <span>Start</span>
+          <h3>Кав'ярня на 24 місця</h3>
+          <p>Легкі дерев'яні моделі, 3 кольори, запас 2 стільці, доставка і зразки тканин.</p>
+          <strong>від 78 600 грн</strong>
+        </article>
+        <article>
+          <span>Signature</span>
+          <h3>Ресторан на 56 місць</h3>
+          <p>М'яка посадка, преміальна тканина, барні стільці, комплект під VIP-зону.</p>
+          <strong>від 236 000 грн</strong>
+        </article>
+        <article>
+          <span>Terrace</span>
+          <h3>Літня тераса на 40 місць</h3>
+          <p>Штабельні моделі, вуличне покриття, швидке зберігання після сезону.</p>
+          <strong>від 112 000 грн</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section comparison">
+      <div class="comparison-grid">
+        <div>
+          <p class="eyebrow">Чому не маркетплейс</p>
+          <h2>Для закладу важливі партія, гарантія і повторне замовлення</h2>
+        </div>
+        <div class="compare-table" role="table" aria-label="Порівняння закупки стільців">
+          <div role="row">
+            <span role="cell">Підбір під інтер'єр</span>
+            <b role="cell">ChairLine</b>
+            <em role="cell">Звичайний магазин</em>
+          </div>
+          <div role="row">
+            <span role="cell">Комерційні тканини</span>
+            <b role="cell">Так</b>
+            <em role="cell">Не завжди</em>
+          </div>
+          <div role="row">
+            <span role="cell">Розрахунок запасу</span>
+            <b role="cell">Так</b>
+            <em role="cell">Ні</em>
+          </div>
+          <div role="row">
+            <span role="cell">Повтор партії через сезон</span>
+            <b role="cell">Планується</b>
+            <em role="cell">Невідомо</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow">Заявка</p>
+          <h2>Отримайте підбірку стільців під ваш заклад</h2>
+          <p>Залиште контакти, формат закладу і кількість місць. У реальному проєкті заявка пішла б у CRM або Telegram менеджера.</p>
+        </div>
+
+        <form class="lead-form" data-lead>
+          <label>
+            Ім'я
+            <input type="text" name="name" placeholder="Костя" required>
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+380 XX XXX XX XX" required>
+          </label>
+          <label>
+            Формат
+            <select name="format">
+              <option>Кав'ярня</option>
+              <option>Ресторан</option>
+              <option>Бар</option>
+              <option>Тераса</option>
+            </select>
+          </label>
+          <button class="button button-primary" type="submit">Підібрати сет</button>
+          <p class="form-status" data-status aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-cta" data-sticky-cta>
+    <span>Партія стільців для запуску закладу</span>
+    <a href="#quote">Розрахувати</a>
+  </div>
+
+  <footer class="site-footer">
+    <p>ChairLine HoReCa - демо-лендінг для портфоліо HTML/CSS/JS.</p>
+    <a href="#top">Нагору</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
