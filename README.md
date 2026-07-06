@@ -1,14 +1,16 @@
-# ChairLine HoReCa landing
+# ChairLine HoReCa
 
-Portfolio landing page for commercial cafe and restaurant chairs.
+Business-ready landing page for a HoReCa chair supplier.
 
-Built with plain HTML, CSS and JavaScript.
+Built with plain HTML, CSS and JavaScript for GitHub Pages.
 
 ## Features
 
-- Advertising hero with generated product interior image
-- Filterable HoReCa chair catalog
-- Material configurator
-- Batch quote calculator
+- Commercial hero with live quote ticket
+- Venue scenario tabs for cafe, restaurant, bar and terrace
+- Business-focused chair package cards
+- Interactive material studio
+- Batch procurement calculator
+- Case studies, purchase process and FAQ
 - Lead form validation
-- Responsive layout for desktop and mobile
+- Responsive desktop and mobile layout
