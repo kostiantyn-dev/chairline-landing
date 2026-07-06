@@ -243,7 +243,7 @@ if (lead) {
       return;
     }
 
-    status.textContent = "Готово. Менеджер отримав би заявку, формат закладу й поточний кошторис.";
+    status.textContent = "Дякуємо! Ми отримали заявку й підготуємо добірку стільців під ваш формат.";
     status.classList.add("is-success");
     lead.reset();
   });
