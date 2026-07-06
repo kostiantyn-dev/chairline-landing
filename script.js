@@ -15,7 +15,6 @@ const venueData = {
     status: "для кав'ярні",
     label: "Кав'ярня на 24 місця",
     title: "Легка посадка, тепла фактура, швидкий обіг столів",
-    text: "Компактні дерев'яні моделі, easy-clean тканина для плям від кави й десертів, запас 8% для замін.",
     list: ["24 місця + 2 резервні стільці", "2 кольори каркасу, 3 тканини", "Поставка 10-14 днів"],
     seats: 24,
     model: "3280"
@@ -24,7 +23,6 @@ const venueData = {
     status: "для ресторану",
     label: "Ресторан на 56 місць",
     title: "М'яка посадка, виразний силует і єдиний стиль залу",
-    text: "Преміальні тканини, спинки для довшої посадки, поєднання основного залу й lounge-зони.",
     list: ["56 місць + 8% резерву", "Тканини з високою щільністю", "Поставка 14-18 днів"],
     seats: 56,
     model: "4190"
@@ -33,7 +31,6 @@ const venueData = {
     status: "для бару",
     label: "Барна зона на 36 місць",
     title: "Вища посадка, темні матеріали й посилений каркас",
-    text: "Барні стільці та напівкрісла для високого навантаження, практичні покриття й швидке прибирання.",
     list: ["36 місць + 15% резерву", "Темні easy-clean матеріали", "Поставка 14-18 днів"],
     seats: 36,
     model: "4860"
@@ -42,7 +39,6 @@ const venueData = {
     status: "для тераси",
     label: "Тераса на 40 місць",
     title: "Штабельні моделі, вуличне покриття і сезонне зберігання",
-    text: "Легкі стільці для відкритих майданчиків, запас на сезон і повторна партія для наступного літа.",
     list: ["40 місць + 6 резервних стільців", "Покриття для вулиці", "Поставка 10-14 днів"],
     seats: 40,
     model: "2550"
@@ -112,7 +108,6 @@ function applyVenue(key) {
 
   document.querySelector("[data-venue-label]").textContent = data.label;
   document.querySelector("[data-venue-title]").textContent = data.title;
-  document.querySelector("[data-venue-text]").textContent = data.text;
   document.querySelector("[data-ticket-status]").textContent = data.status;
 
   const list = document.querySelector("[data-venue-list]");
