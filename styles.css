@@ -595,80 +595,24 @@ h3 {
 
 .chair-visual {
   position: relative;
-  min-height: 210px;
+  min-height: 224px;
   margin: 10px 0 18px;
   border-radius: var(--radius);
-  background:
-    radial-gradient(circle at 50% 86%, rgba(0, 0, 0, 0.32), transparent 38%),
-    linear-gradient(145deg, var(--visual-a), var(--visual-b));
+  background: #2a2118;
   overflow: hidden;
 }
 
-.chair-visual::before,
-.chair-visual::after,
-.chair-visual span {
+.chair-visual img {
   position: absolute;
-  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 420ms ease;
 }
 
-.chair-visual::before {
-  right: 54px;
-  bottom: 72px;
-  width: 114px;
-  height: 92px;
-  border-radius: 46px 46px 20px 20px;
-  background: var(--chair);
-  box-shadow: inset 0 16px 30px rgba(255, 255, 255, 0.16);
-}
-
-.chair-visual::after {
-  right: 67px;
-  bottom: 46px;
-  width: 90px;
-  height: 27px;
-  border-radius: 999px;
-  background: var(--seat);
-}
-
-.chair-visual span {
-  right: 82px;
-  bottom: 14px;
-  width: 58px;
-  height: 48px;
-  border-right: 8px solid var(--leg);
-  border-left: 8px solid var(--leg);
-}
-
-.visual-cafe {
-  --visual-a: #f5dfbf;
-  --visual-b: #bd8357;
-  --chair: #8a5a32;
-  --seat: #2f2118;
-  --leg: #5c3821;
-}
-
-.visual-restaurant {
-  --visual-a: #e8d6b5;
-  --visual-b: #59623f;
-  --chair: #657148;
-  --seat: #445034;
-  --leg: #17130f;
-}
-
-.visual-bar {
-  --visual-a: #454b55;
-  --visual-b: #17191f;
-  --chair: #2b3038;
-  --seat: #151820;
-  --leg: #0d0f12;
-}
-
-.visual-terrace {
-  --visual-a: #efc395;
-  --visual-b: #b65f42;
-  --chair: #b65f42;
-  --seat: #8d4532;
-  --leg: #293126;
+.collection-card:hover .chair-visual img {
+  transform: scale(1.04);
 }
 
 .collection-card p {
